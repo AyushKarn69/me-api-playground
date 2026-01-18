@@ -1,0 +1,85 @@
+.work-experience-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.work-experience-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #FF6B35;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 1rem;
+}
+
+.work-experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.work-experience-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  min-height: auto;
+}
+
+.work-experience-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #FF6B35;
+}
+
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.work-header h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #FF6B35;
+}
+
+.company {
+  background-color: #FFF3E0;
+  color: #FF6B35;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.work-dates {
+  font-size: 14px;
+  color: #004E89;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.work-description {
+  margin: 10px 0 0 0;
+  color: #1a1a1a;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.work-experience-container.error {
+  color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .work-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .work-header h3 {
+    font-size: 18px;
+  }
+}
