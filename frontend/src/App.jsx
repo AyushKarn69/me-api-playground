@@ -4,7 +4,7 @@ import Projects from './components/Projects';
 import Search from './components/Search';
 import WorkExperience from './components/WorkExperience';
 import './App.css';
-const API_BASE = import.meta.env.VITE_API_URL;
+const API_BASE = import.meta.env.VITE_API_BASE;
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('profile');
