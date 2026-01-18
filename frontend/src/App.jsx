@@ -4,6 +4,7 @@ import Projects from './components/Projects';
 import Search from './components/Search';
 import WorkExperience from './components/WorkExperience';
 import './App.css';
+const API_BASE = import.meta.env.VITE_API_URL;
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('profile');
@@ -15,7 +16,7 @@ export default function App() {
 
   const checkApiHealth = async () => {
     try {
-      const response = await fetch('http://localhost:3001/health', {
+       const response = await fetch(`${API_BASE}/health`, {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' },
       });
