@@ -1,0 +1,29 @@
+{
+  "name": "me-api-playground-backend",
+  "version": "1.0.0",
+  "description": "Personal profile API playground",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "db:init": "node db/init.js",
+    "db:seed": "node db/seed.js",
+    "test": "jest"
+  },
+  "keywords": ["api", "profile", "playground"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "pg": "^8.11.3",
+    "dotenv": "^16.3.1",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0"
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "info": {
+    "name": "Me-API Playground",
+    "description": "Personal profile API playground - Candidate profile management and query API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3001/health",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["health"]
+        }
+      }
+    },
+    {
+      "name": "Profile",
+      "item": [
+        {
+          "name": "Get Profile",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3001/api/profile",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["api", "profile"]
+            }
+          }
+        },
+        {
+          "name": "Get Full Profile",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3001/api/profile/1/full",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["api", "profile", "1", "full"]
+            }
+          }
+        },
+        {
+          "name": "Create Profile",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3001/api/profile",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["api", "profile"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Jane Doe\",\n  \"email\": \"jane@example.com\",\n  \"education\": \"Bachelor of Science in Software Engineering\",\n  \"github_link\": \"https://github.com/janedoe\",\n  \"linkedin_link\": \"https://linkedin.com/in/janedoe\",\n  \"portfolio_link\": \"https://janedoe-portfolio.com\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Update Profile",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3001/api/profile/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["api", "profile", "1"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"John Doe Updated\",\n  \"email\": \"john.updated@example.com\",\n  \"education\": \"Bachelor of Science in Computer Science - Tech University (2022)\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Projects",
+      "item": [
+        {
+          "name": "Get All Projects",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3001/api/projects",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["api", "projects"]
+            }
+          }
+        },
+        {
+          "name": "Get Projects by Skill",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3001/api/projects?skill=React",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["api", "projects"],
+              "query": [
+                {
+                  "key": "skill",
+                  "value": "React"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Project by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3001/api/projects/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["api", "projects", "1"]
+            }
+          }
+        },
+        {
+          "name": "Create Project",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3001/api/projects",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["api", "projects"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"profile_id\": 1,\n  \"title\": \"New Project\",\n  \"description\": \"A new amazing project\",\n  \"github_link\": \"https://github.com/user/project\",\n  \"live_link\": \"https://project-demo.com\",\n  \"skills\": [\"React\", \"Node.js\"]\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skills",
+      "item": [
+        {
+          "name": "Get All Skills",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3001/api/skills",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["api", "skills"]
+            }
+          }
+        },
+        {
+          "name": "Get Top Skills",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3001/api/skills/top?limit=5",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["api", "skills", "top"],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "5"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Search",
+      "item": [
+        {
+          "name": "Search All",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3001/api/search?q=python",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["api", "search"],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "python"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
