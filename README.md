@@ -4,7 +4,7 @@ A full-stack personal profile API and web application showcasing professional in
 
 **Resume**: [Ayush Karn - Resume](https://drive.google.com/file/d/1W3VJstd7AswSNUJs8gew5SOin03e94ui/view?usp=sharing)
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Tech Stack
 - **Backend**: Node.js + Express.js with PostgreSQL
@@ -35,7 +35,7 @@ React App (Port 3000)
 └── API Layer
     └── Axios client for backend communication
 ```
-## 📊 Database Schema
+##  Database Schema
 
 ### Tables
 
@@ -96,7 +96,7 @@ created_at        - Timestamp
 updated_at        - Timestamp
 ```
 
-## 🚀 Setup
+##  Setup
 
 ### Prerequisites
 - Node.js >= 16
@@ -218,7 +218,7 @@ server {
 }
 ```
 
-## 📡 API Endpoints
+##  API Endpoints
 
 ### Health Check
 - `GET /health` - Database and API health status
@@ -245,7 +245,7 @@ server {
 ### Search
 - `GET /api/search?q=query` - Search across projects and skills
 
-## 📝 Sample Requests
+##  Sample Requests
 
 ### Using cURL
 
@@ -278,7 +278,7 @@ Import the provided Postman collection:
 
 For detailed curl requests, see `sample-curl-requests.sh`
 
-## ⚠️ Known Limitations
+##  Known Limitations
 
 1. **Single Profile**: The API currently supports only one active profile. Multi-user support would require authentication and user management.
 
@@ -313,7 +313,7 @@ For detailed curl requests, see `sample-curl-requests.sh`
     - No request logging or monitoring
     - No performance metrics or analytics
 
-## 🔧 Development
+##  Development
 
 ### Project Structure
 ```
@@ -360,7 +360,7 @@ npm run db:seed
 psql -U postgres -d me_api_playground
 ```
 
-## 📱 Frontend Features
+##  Frontend Features
 
 - **Profile Component**: Display candidate information, education, and links
 - **Projects Component**: Browse projects with skill-based filtering
@@ -368,7 +368,7 @@ psql -U postgres -d me_api_playground
 - **Responsive Design**: Mobile-friendly interface
 - **Live Filtering**: Real-time project filtering by selected skills
 
-## 🔐 Security Features
+##  Security Features
 
 - **Helmet.js**: Sets HTTP headers for security
 - **CORS**: Configured for cross-origin requests
@@ -376,10 +376,10 @@ psql -U postgres -d me_api_playground
 - **SQL Injection Prevention**: Uses parameterized queries
 - **Input Validation**: Server-side validation on all endpoints
 
-## 📚 Additional Resources
+##  Additional Resources
 - [GitHub Profile](https://github.com/AyushKarn69)
 - [LinkedIn](https://www.linkedin.com/in/ayushkarn01/)
 
-## 📄 License
+##  License
 
 This project is open source and available under the MIT License.
