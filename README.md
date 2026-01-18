@@ -377,8 +377,6 @@ psql -U postgres -d me_api_playground
 - **Input Validation**: Server-side validation on all endpoints
 
 ## 📚 Additional Resources
-
-- [Ayush Karn Portfolio](https://ayushkarn-portfolio.com)
 - [GitHub Profile](https://github.com/AyushKarn69)
 - [LinkedIn](https://www.linkedin.com/in/ayushkarn01/)
 
