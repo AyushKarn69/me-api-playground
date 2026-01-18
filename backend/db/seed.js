@@ -93,20 +93,6 @@ async function seedDatabase() {
         endDate: '2024-08-31',
         description: 'Engineered Android apps with Kotlin + Jetpack Compose, reducing UI load time by 15%.Integrated Firebase Authentication, Firestore, Cloud Messaging for 500+ active users.',
       },
-      {
-        company: 'StartUp Inc',
-        position: 'Full-Stack Developer',
-        startDate: '2021-06-01',
-        endDate: '2022-12-31',
-        description: 'Built and maintained React and Node.js applications for IoT platform',
-      },
-      {
-        company: 'Digital Agency',
-        position: 'Junior Developer',
-        startDate: '2020-07-01',
-        endDate: '2021-05-31',
-        description: 'Developed responsive web applications using React and maintained legacy systems',
-      },
     ];
 
     for (const work of workExperience) {
