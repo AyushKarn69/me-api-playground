@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './WorkExperience.css';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+const API_URL = import.meta.env.VITE_API_URL;
 
 export default function WorkExperience() {
   const [workExperience, setWorkExperience] = useState([]);
@@ -17,11 +17,11 @@ export default function WorkExperience() {
     try {
       setLoading(true);
       // First get profile to get the ID
-      const profileResponse = await axios.get(`${API_URL}/api/profile`);
+      const profileResponse = await axios.get(`${API_URL}/profile`);
       const profileId = profileResponse.data.id;
       
       // Then get full profile with work experience
-      const response = await axios.get(`${API_URL}/api/profile/${profileId}/full`);
+      const response = await axios.get(`${API_URL}/profile/${profileId}/full`);
       setWorkExperience(response.data.work || []);
       setError(null);
     } catch (err) {
