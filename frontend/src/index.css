@@ -4,16 +4,44 @@
   box-sizing: border-box;
 }
 
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  50% {
+    transform: translateY(-40px) translateX(-10px);
+  }
+  75% {
+    transform: translateY(-20px) translateX(15px);
+  }
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #1a1a1a 0%, #890000 100%);
+  background: #f8f9fa;
   min-height: 100vh;
-  color: #1a1a1a;
+  color: #333;
 }
+
+
 
 #root {
   min-height: 100vh;
@@ -23,18 +51,31 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.app::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -2;
 }
 
 .app-header {
-  background: rgba(117, 1, 1, 0.95);
-  padding: 2rem;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: white;
+  padding: 1.5rem 0;
 }
 
 .app-header h1 {
-  color: #FF6B35;
+  color: #2c3e50;
   margin-bottom: 0.5rem;
+  font-size: 2rem;
 }
 
 .health-status {
@@ -43,12 +84,12 @@ body {
 }
 
 .health-status .connected {
-  color: #00B894;
+  color: #0D9488;
   font-weight: bold;
 }
 
 .health-status .disconnected {
-  color: #ef4444;
+  color: #D97706;
   font-weight: bold;
 }
 
@@ -57,28 +98,30 @@ body {
   justify-content: center;
   gap: 1rem;
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.9);
-  border-bottom: 2px solid #ea6666;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .nav-btn {
   padding: 0.75rem 1.5rem;
-  border: 2px solid #ea6666;
+  border: 1px solid #d1d5db;
   background: white;
-  color: #ea6666;
-  border-radius: 8px;
+  color: #4b5563;
+  border-radius: 6px;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .nav-btn:hover {
-  background: #690202c2;
+  background: #f3f4f6;
+  border-color: #9ca3af;
 }
 
 .nav-btn.active {
-  background: #ea6666;
+  background: #3b82f6;
   color: white;
+  border-color: #3b82f6;
 }
 
 .app-main {
@@ -90,15 +133,16 @@ body {
 }
 
 .app-footer {
-  background: rgba(117, 1, 1, 0.95);
+  background: #2c3e50;
   padding: 2rem;
   text-align: center;
-  border-top: 2px solid #ea6666;
+  border-top: 1px solid #e5e7eb;
   margin-top: 2rem;
+  color: #e5e7eb;
 }
 
 .app-footer a {
-  color: #dda4a4;
+  color: #60a5fa;
   text-decoration: none;
   margin-left: 0.5rem;
 }

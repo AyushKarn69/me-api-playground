@@ -2,118 +2,139 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(135deg, #1a1a1a 0%, #4c0000 100%);
+  background: transparent;
 }
 
 .app-header {
-  background: rgba(142, 3, 3, 0.95);
-  padding: 2rem;
+  background: rgba(20, 20, 40, 0.4);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+  padding: 2.5rem 2rem;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 217, 255, 0.1);
 }
 
 .app-header h1 {
-  color: #FF6B35;
+  color: #00d9ff;
   margin-bottom: 0.5rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
 }
 
 .health-status {
   font-size: 0.9rem;
-  color: #f10b0b;
+  color: #a0aec0;
+  font-weight: 500;
 }
 
 .health-status .connected {
-  color: #00B894;
+  color: #00ff88;
   font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
 }
 
 .health-status .disconnected {
-  color: #FF6B35;
+  color: #ff006e;
   font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 0, 110, 0.5);
 }
 
 .app-nav {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  padding: 1rem 2rem;
-  background: rgba(117, 1, 1, 0.95);
-  border-bottom: 2px solid #FF6B35;
+  padding: 1.5rem 2rem;
+  background: rgba(20, 20, 40, 0.3);
+  border-bottom: 1px solid rgba(0, 217, 255, 0.1);
   flex-wrap: wrap;
+  backdrop-filter: blur(10px);
 }
 
 .nav-btn {
-  padding: 0.75rem 1.5rem;
-  border: 2px solid #FF6B35;
-  background: white;
-  color: #FF6B35;
-  border-radius: 8px;
+  padding: 0.75rem 1.75rem;
+  border: 2px solid rgba(0, 217, 255, 0.5);
+  background: rgba(0, 217, 255, 0.1);
+  color: #00d9ff;
+  border-radius: 12px;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s ease;
   font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .nav-btn:hover {
-  background: #FFF3E0;
+  background: rgba(0, 217, 255, 0.2);
   transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+  border-color: rgba(0, 217, 255, 0.8);
 }
 
 .nav-btn.active {
-  background: #FF6B35;
-  color: white;
-  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+  background: linear-gradient(135deg, rgba(0, 217, 255, 0.3), rgba(0, 255, 136, 0.2));
+  color: #00ff88;
+  border-color: #00ff88;
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.4), inset 0 0 10px rgba(0, 255, 136, 0.1);
 }
 
 .app-main {
   flex: 1;
-  padding: 2rem;
+  padding: 2.5rem;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
 }
 
 .app-footer {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(20, 20, 40, 0.4);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(0, 217, 255, 0.2);
   padding: 2rem;
   text-align: center;
-  border-top: 2px solid #FF6B35;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  box-shadow: 0 -8px 32px rgba(0, 217, 255, 0.1);
 }
 
 .app-footer p {
-  color: #666;
+  color: #a0aec0;
   margin: 0;
 }
 
 .app-footer a {
-  color: #FF6B35;
+  color: #00d9ff;
   text-decoration: none;
   margin-left: 0.5rem;
   font-weight: 600;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
 }
 
 .app-footer a:hover {
-  text-decoration: underline;
+  color: #00ff88;
+  text-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
 }
 
 .loading {
   text-align: center;
   padding: 2rem;
-  color: white;
+  color: #a0aec0;
   font-size: 1.1rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+  background: rgba(20, 20, 40, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 217, 255, 0.2);
 }
 
 .error {
-  background: #fee;
-  color: #c33;
+  background: rgba(255, 0, 110, 0.1);
+  color: #ff006e;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 12px;
   margin-bottom: 1rem;
-  border-left: 4px solid #c33;
+  border-left: 4px solid #ff006e;
+  border: 1px solid rgba(255, 0, 110, 0.3);
 }
 
 @media (max-width: 768px) {

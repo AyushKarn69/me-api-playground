@@ -1,13 +1,16 @@
 .projects-section {
   background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
 }
 
 .projects-section h2 {
-  color: #FF6B35;
-  margin-bottom: 1.5rem;
+  color: #1f2937;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .skills-filter {
@@ -15,11 +18,15 @@
   padding: 1.5rem;
   background: #f9fafb;
   border-radius: 8px;
+  border: 1px solid #e5e7eb;
 }
 
 .skills-filter h3 {
-  color: #1a1a1a;
+  color: #374151;
   margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.95rem;
 }
 
 .skill-buttons {
@@ -29,54 +36,59 @@
 }
 
 .skill-btn {
-  padding: 0.5rem 1rem;
-  border: 2px solid #ddd;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #d1d5db;
   background: white;
-  color: #1a1a1a;
-  border-radius: 8px;
+  color: #374151;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-weight: 500;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-size: 0.85rem;
 }
 
 .skill-btn:hover {
-  border-color: #FF6B35;
-  color: #FF6B35;
+  border-color: #3b82f6;
+  background: #eff6ff;
 }
 
 .skill-btn.active {
-  background: #FF6B35;
+  background: #3b82f6;
   color: white;
-  border-color: #FF6B35;
+  border-color: #3b82f6;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 1.5rem;
 }
 
 .project-card {
-  background: #f9fafb;
-  padding: 1.5rem;
-  border-radius: 12px;
-  border-left: 4px solid #FF6B35;
+  background: white;
+  padding: 1.75rem;
+  border-radius: 8px;
+  border-left: 4px solid #3b82f6;
   transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
 }
 
 .project-card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transform: translateY(-4px);
 }
 
 .project-card h4 {
-  color: #FF6B35;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .project-card .description {
-  color: #1a1a1a;
+  color: #4b5563;
   margin-bottom: 1rem;
   line-height: 1.6;
 }
@@ -86,7 +98,7 @@
 }
 
 .project-skills strong {
-  color: #333;
+  color: #374151;
   display: block;
   margin-bottom: 0.5rem;
 }
@@ -99,8 +111,8 @@
 
 .skill-tag {
   display: inline-block;
-  background: #e0e7ff;
-  color: #667eea;
+  background: #DDD6FE;
+  color: #6B46C1;
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -110,22 +122,29 @@
 .project-links {
   display: flex;
   gap: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .project-links a {
   flex: 1;
-  padding: 0.5rem;
-  background: #667eea;
-  color: white;
+  padding: 0.65rem;
+  background: linear-gradient(135deg, rgba(0, 217, 255, 0.2), rgba(0, 255, 136, 0.1));
+  color: #00d9ff;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
   text-align: center;
   font-size: 0.9rem;
   transition: all 0.3s ease;
+  border: 1px solid rgba(0, 217, 255, 0.3);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
 }
 
 .project-links a:hover {
-  background: #764ba2;
-  transform: translateY(-1px);
+  background: linear-gradient(135deg, rgba(0, 217, 255, 0.3), rgba(0, 255, 136, 0.2));
+  color: #00ff88;
+  border-color: #00ff88;
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.3);
+  transform: translateY(-2px);
 }
