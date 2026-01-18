@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Profile from './components/Profile';
 import Projects from './components/Projects';
 import Search from './components/Search';
+import WorkExperience from './components/WorkExperience';
 import './App.css';
 
 export default function App() {
@@ -56,6 +57,13 @@ export default function App() {
         >
           Search
         </button>
+        <button
+          className={`nav-btn ${activeTab === 'experience' ? 'active' : ''}`}
+          onClick={() => setActiveTab('experience')}
+        >
+          Work Experience
+        </button>
+        {activeTab === 'experience' && <WorkExperience />}
       </nav>
 
       <main className="app-main">

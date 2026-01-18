@@ -10,9 +10,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #890000 100%);
   min-height: 100vh;
-  color: #333;
+  color: #1a1a1a;
 }
 
 #root {
@@ -26,14 +26,14 @@ body {
 }
 
 .app-header {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(117, 1, 1, 0.95);
   padding: 2rem;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .app-header h1 {
-  color: #667eea;
+  color: #FF6B35;
   margin-bottom: 0.5rem;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 .health-status .connected {
-  color: #10b981;
+  color: #00B894;
   font-weight: bold;
 }
 
@@ -58,14 +58,14 @@ body {
   gap: 1rem;
   padding: 1rem 2rem;
   background: rgba(255, 255, 255, 0.9);
-  border-bottom: 2px solid #667eea;
+  border-bottom: 2px solid #ea6666;
 }
 
 .nav-btn {
   padding: 0.75rem 1.5rem;
-  border: 2px solid #667eea;
+  border: 2px solid #ea6666;
   background: white;
-  color: #667eea;
+  color: #ea6666;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
@@ -73,11 +73,11 @@ body {
 }
 
 .nav-btn:hover {
-  background: #f3f4f6;
+  background: #690202c2;
 }
 
 .nav-btn.active {
-  background: #667eea;
+  background: #ea6666;
   color: white;
 }
 
@@ -90,15 +90,15 @@ body {
 }
 
 .app-footer {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(117, 1, 1, 0.95);
   padding: 2rem;
   text-align: center;
-  border-top: 2px solid #667eea;
+  border-top: 2px solid #ea6666;
   margin-top: 2rem;
 }
 
 .app-footer a {
-  color: #667eea;
+  color: #dda4a4;
   text-decoration: none;
   margin-left: 0.5rem;
 }

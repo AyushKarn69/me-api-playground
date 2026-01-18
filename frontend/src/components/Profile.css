@@ -16,13 +16,13 @@
 }
 
 .profile-header h1 {
-  color: #667eea;
+  color: #FF6B35;
   margin-bottom: 0.5rem;
   font-size: 2.5rem;
 }
 
 .profile-header .email {
-  color: #666;
+  color: #004E89;
   font-size: 1.1rem;
 }
 
@@ -31,12 +31,12 @@
 }
 
 .profile-field h3 {
-  color: #667eea;
+  color: #FF6B35;
   margin-bottom: 0.5rem;
 }
 
 .profile-field p {
-  color: #555;
+  color: #1a1a1a;
   line-height: 1.6;
 }
 
@@ -50,7 +50,7 @@
 .profile-links a {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background: #667eea;
+  background: #FF6B35;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -58,7 +58,7 @@
 }
 
 .profile-links a:hover {
-  background: #764ba2;
+  background: #004E89;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
 }

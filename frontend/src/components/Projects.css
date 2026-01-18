@@ -6,7 +6,7 @@
 }
 
 .projects-section h2 {
-  color: #667eea;
+  color: #FF6B35;
   margin-bottom: 1.5rem;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .skills-filter h3 {
-  color: #333;
+  color: #1a1a1a;
   margin-bottom: 1rem;
 }
 
@@ -32,7 +32,7 @@
   padding: 0.5rem 1rem;
   border: 2px solid #ddd;
   background: white;
-  color: #333;
+  color: #1a1a1a;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -40,14 +40,14 @@
 }
 
 .skill-btn:hover {
-  border-color: #667eea;
-  color: #667eea;
+  border-color: #FF6B35;
+  color: #FF6B35;
 }
 
 .skill-btn.active {
-  background: #667eea;
+  background: #FF6B35;
   color: white;
-  border-color: #667eea;
+  border-color: #FF6B35;
 }
 
 .projects-grid {
@@ -60,7 +60,7 @@
   background: #f9fafb;
   padding: 1.5rem;
   border-radius: 12px;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #FF6B35;
   transition: all 0.3s ease;
 }
 
@@ -70,13 +70,13 @@
 }
 
 .project-card h4 {
-  color: #667eea;
+  color: #FF6B35;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
 }
 
 .project-card .description {
-  color: #666;
+  color: #1a1a1a;
   margin-bottom: 1rem;
   line-height: 1.6;
 }
